@@ -1,2 +1,5 @@
-# ManuelKy08.github.io
-BIO LINK
+# linkinbio
+
+FREE okay! bebas ngulangin semua code nya 
+
+ENJOY!
