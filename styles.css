@@ -265,7 +265,7 @@ a.link:hover {
   box-shadow: 8px 8px 14px -8px #2b3137;
 }
 
-.google {
+.tw {
   background-color: #ffffff;
   box-shadow: 8px 8px 14px -8px #ffffff;
 }
@@ -280,19 +280,14 @@ a.link:hover {
   box-shadow: 8px 8px 14px -8px #0077b5;
 }
 
-.medium {
+.mdim {
   background-color: #000000;
   box-shadow: 8px 8px 14px -8px #000000;
 }
 
-.paypal {
+.kikikokok {
   background-color: #3b7bbf;
   box-shadow: 8px 8px 14px -8px #3b7bbf;
-}
-
-.twitter {
-  background-color: #1da1f2;
-  box-shadow: 8px 8px 14px -8px #1da1f2;
 }
 
 .youtube {
