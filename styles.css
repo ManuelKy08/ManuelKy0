@@ -1,34 +1,8 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
   color: white;
 }
 
-blockquote,
-body,
-dd,
-dl,
-dt,
-fieldset,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-html,
-iframe,
-legend,
-li,
-ol,
-p,
-pre,
-textarea,
-ul {
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
   margin: 0;
   padding: 0;
 }
@@ -42,9 +16,9 @@ body {
   text-rendering: optimizeLegibility;
   background-color: #191b21;
   font-family: sans-serif;
-  display: block;
 }
 
+/* Links styles */
 a {
   color: #3273dc;
   cursor: pointer;
@@ -55,6 +29,7 @@ a:hover {
   color: #3273dc;
 }
 
+/* Container styles */
 .outer {
   text-align: center;
   margin: 0 auto;
@@ -64,10 +39,10 @@ a:hover {
   max-width: 1000px;
   min-height: 90vh;
   margin: 56px auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
+/* Profile styles */
 .block {
   text-align: center;
   background-color: #000000;
@@ -89,17 +64,14 @@ a:hover {
   margin: 0 1em;
 }
 
-.profile .location {
-  margin-top: 10px;
-  font-size: 0.9em;
-}
-
+.profile .location,
 .profile .bio {
-  color: rgb(255, 255, 255);
   margin-top: 10px;
   font-size: 0.9em;
+  color: #fff;
 }
 
+/* Links styles */
 .links {
   margin-top: 25px;
 }
@@ -110,16 +82,13 @@ a:hover {
   border: #7f8d9e 1px solid;
   cursor: pointer;
   justify-content: center;
-  padding-bottom: 0.5em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-top: 0.5em;
+  padding: 0.5em 0.75em;
   text-align: center;
   white-space: nowrap;
 }
 
 .links .contactbutton:hover {
-  color: rgb(253, 0, 0);
+  color: #fd0000;
   border: white 1px solid;
 }
 
@@ -136,7 +105,7 @@ a:hover {
 
 .link h2 {
   font-size: 0.9em;
-  margin: 0px;
+  margin: 0;
   line-height: 1em;
 }
 
@@ -159,10 +128,6 @@ a:hover {
   right: 20px;
   top: 0px;
   padding-top: 28px;
-}
-
-.link > .arrow,
-.link > .image-float {
   -webkit-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
 }
@@ -186,6 +151,7 @@ a.link:hover {
   color: #7afd00;
 }
 
+/* Beacon animation */
 .beacon {
   position: absolute;
   -webkit-animation: beacon 2s ease infinite, tr 2s ease-out infinite;
@@ -204,6 +170,7 @@ a.link:hover {
     opacity: 0;
   }
 }
+
 @keyframes beacon {
   from {
     opacity: 0.85;
@@ -212,6 +179,7 @@ a.link:hover {
     opacity: 0;
   }
 }
+
 @-webkit-keyframes tr {
   from {
     transform: scaleX(1) scaleY(1);
@@ -220,6 +188,7 @@ a.link:hover {
     transform: scaleX(1.5) scaleY(1.5);
   }
 }
+
 @keyframes tr {
   from {
     transform: scaleX(1) scaleY(1);
@@ -228,69 +197,65 @@ a.link:hover {
     transform: scaleX(1.5) scaleY(1.5);
   }
 }
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+
+/* Dark mode styles */
+body.darkmode {
+  background: rgba(252, 252, 252, 0.466);
+  color: rgb(0, 0, 0);
 }
 
-.amazon {
-  background-color: #c13584;
-  box-shadow: 8px 8px 14px -8px #c13584;
+/* Particular section styles */
+.judul {
+  background: linear-gradient(to top right, #3804b3 0%, #6f00ff 30%, #a078ff 60%, #2d02d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.dev {
-  background-color: #000000;
-  box-shadow: 8px 8px 14px -8px #000000;
+.text-gradasi1 {
+  background: radial-gradient(circle farthest-side at top right, #6547de 73%, #1c0282 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.facebook {
-  background-color: #3b5998;
-  box-shadow: 8px 8px 14px -8px #3b5998;
+.partikel {
+  border-radius: 50%;
+  background: radial-gradient(circle farthest-corner at center center, #6202cf62 0%, #00000000 51%);
 }
 
-.github {
-  background-color: #2b3137;
-  box-shadow: 8px 8px 14px -8px #2b3137;
+.bg-border {
+  border-radius: 1.2rem;
+  background: rgba(19, 19, 19, 0.785);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(10.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 50px 0px;
 }
 
-.tw {
-  background-color: #ffffff;
-  box-shadow: 8px 8px 14px -8px #ffffff;
+/* Vertical text styles */
+.vertical {
+  z-index: 9999;
+  letter-spacing: 0.025rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.instagram {
-  background-color: #c13584;
-  box-shadow: 8px 8px 14px -8px #c13584;
+.vertical a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: color 0.25s ease;
 }
 
-.linkedin {
-  background-color: #0077b5;
-  box-shadow: 8px 8px 14px -8px #0077b5;
+.vertical a:hover {
+  color: rgb(118, 70, 207);
 }
 
-.mdim {
-  background-color: #000000;
-  box-shadow: 8px 8px 14px -8px #000000;
-}
-
-.kikikokok {
-  background-color: #3b7bbf;
-  box-shadow: 8px 8px 14px -8px #3b7bbf;
-}
-
-.youtube {
-  background-color: #ff0000;
-  box-shadow: 8px 8px 14px -8px #ff0000;
-}
+.vertical a:hover:after {
+  color: rgba(255, 255, 255, 0.5);
